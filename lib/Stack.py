@@ -18,16 +18,21 @@ class Stack:
             return None
 
     def pop(self):
-        pass
+        if self.isEmpty():
+            return None
+        return self.items.pop()
 
     def peek(self):
-        pass
-    
+        return self.items[len(self.items)]
+
     def size(self):
-        pass
+        return len(self.items)
 
     def full(self):
-        pass
+
+        if (len(self.items) >= self.limit):
+            return True
+        return False
 
     def search(self, target):
         pass

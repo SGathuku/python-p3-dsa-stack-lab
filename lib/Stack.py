@@ -9,10 +9,13 @@ class Stack:
                 self.items.append(item)
 
     def isEmpty(self):
-        pass
+        return self.items == []
 
     def push(self, item):
-        pass
+        if (not self.full()):
+            self.items.append(item)
+        else:
+            return None
 
     def pop(self):
         pass
